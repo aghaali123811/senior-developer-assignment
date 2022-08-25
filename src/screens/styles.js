@@ -12,7 +12,7 @@ export default StyleSheet.create({
     flexDirection: 'row',
   },
   title: {
-    width: '33.4%',
+    width: '25%',
     backgroundColor: Colors.lightGreen,
     borderColor: 'green',
     borderWidth: 1,
@@ -28,7 +28,7 @@ export default StyleSheet.create({
     marginTop: 15,
   },
   input1:{
-    color: '#000000',
+    color: Colors.black,
     borderWidth:1,
     marginTop: 10,
     borderWidth:1,
@@ -36,7 +36,7 @@ export default StyleSheet.create({
     width:'46%',
     marginHorizontal:12,
     fontSize:16,
-    textAlign:'center',
+    paddingLeft:20
   },
   btn:{
     marginTop:10,
@@ -48,6 +48,6 @@ export default StyleSheet.create({
   txt1:{
     fontSize:16,
    marginTop:12,
-   color:'#ffffff',
+   color:Colors.white,
   },
 });

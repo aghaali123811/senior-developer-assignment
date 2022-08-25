@@ -14,30 +14,39 @@ export default function TableList(props) {
         style={styles.container}>
         <View
           style={{
-            width: '33.4%',
+            width: '25%',
             backgroundColor: item.color === true ? Colors.lightGreen : Colors.white,
             borderColor: Colors.green,
             borderWidth: 1,
           }}>
-          <Text style={styles.txt}>{item.name}</Text>
+          <Text style={[styles.txt,{color:item.isSearchUser === 'Yes' ?'red' :Colors.black}]}>{item.name}</Text>
         </View>
         <View
           style={{
-            width: '33.4%',
+            width: '25%',
             backgroundColor: item.color === true ? Colors.lightGreen : Colors.white,
             borderColor: Colors.green,
             borderWidth: 1,
           }}>
-          <Text style={styles.txt}>{index+1}</Text>
+          <Text style={styles.txt}>{item.rank}</Text>
         </View>
         <View
           style={{
-            width: '33.4%',
+            width: '25%',
             backgroundColor: item.color === true ? Colors.lightGreen : Colors.white,
             borderColor: Colors.green,
             borderWidth: 1,
           }}>
           <Text style={styles.txt}>{item.bananas}</Text>
+        </View>
+        <View
+          style={{
+            width: '25%',
+            backgroundColor: item.color === true ? Colors.lightGreen : Colors.white,
+            borderColor: Colors.green,
+            borderWidth: 1,
+          }}>
+          <Text style={styles.txt}>{item.isSearchUser}</Text>
         </View>
       </View>
     </>
